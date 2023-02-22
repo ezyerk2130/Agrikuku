@@ -78,7 +78,31 @@ class myHomePage extends StatelessWidget {
             ),
             SizedBox(height: 20,),
             Column(
-
+              children: [
+                Container(
+                  width: 299.0,
+                  height: 91,
+                  color: Colors.purple[50],
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children:const [
+                          Text('7:00'),
+                          Text('AM'),
+                        ],
+                      ),
+                      const Text('Wape chakula aina ya starters',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold ,
+                      ),
+                      ),
+                      IconButton(onPressed: null, icon: Icon(Icons.doorbell))
+                    ],
+                  ),
+                ),
+              ],
             ),
 
           ],
