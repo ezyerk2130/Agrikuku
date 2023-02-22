@@ -102,11 +102,72 @@ class myHomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(height: 20.0,),
+                Container(
+                  width: 299.0,
+                  height: 91,
+                  color: Colors.purple[50],
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children:const [
+                          Text('7:00'),
+                          Text('AM'),
+                        ],
+                      ),
+                      const Text('Wape chakula aina ya starters',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold ,
+                        ),
+                      ),
+                      IconButton(onPressed: null, icon: Icon(Icons.doorbell))
+                    ],
+                  ),
+                ),
+               SizedBox(height: 20.0,),
+                Container(
+                  width: 299.0,
+                  height: 91,
+                  color: Colors.purple[50],
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children:const [
+                          Text('7:00'),
+                          Text('AM'),
+                        ],
+                      ),
+                      const Text('Wape chakula aina ya starters',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold ,
+                        ),
+                      ),
+                      IconButton(onPressed: null, icon: Icon(Icons.doorbell))
+                    ],
+                  ),
+                ),
               ],
             ),
-
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.analytics),
+            label: 'Projects',
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.price_change),
+            label: 'Market Price',
+          ),
+        ],
+        selectedItemColor: Colors.black,
       ),
     );
   }
