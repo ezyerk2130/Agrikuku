@@ -68,16 +68,19 @@ class myHomePage extends StatelessWidget {
                   ),
                   ),
                 ],
-                Container(
-                  child: Text('Kazi za siku ya leo',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-                SizedBox(height: 10,),
               ),
             ),
+            SizedBox(height: 20,),
+            const Text('Kazi za si ya leo',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+            ),
+            ),
+            SizedBox(height: 20,),
+            Column(
+
+            ),
+
           ],
         ),
       ),
