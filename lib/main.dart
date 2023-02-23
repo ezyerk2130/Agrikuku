@@ -10,6 +10,7 @@ class Agrikuku extends StatelessWidget {
     return MaterialApp(
       title:'Agrikuku',
       theme: ThemeData(
+        useMaterial3: true,
         appBarTheme: const AppBarTheme(
           iconTheme: IconThemeData(color: Colors.black),
           color: Colors.amber,
@@ -40,7 +41,7 @@ class myHomePage extends StatelessWidget {
         ],
       ),
       body:  Padding(
-        padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+        padding: EdgeInsets.fromLTRB(20.0, 40.0, 20.0, 0.0),
         child: Column(
           children:   [
             const Text('Bei ya leo ya sokoni',
@@ -155,7 +156,7 @@ class myHomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
+      /*bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home),
             label: 'Home',
@@ -168,6 +169,24 @@ class myHomePage extends StatelessWidget {
           ),
         ],
         selectedItemColor: Colors.black,
+      ),*/
+      //material 3 navigation bar
+      bottomNavigationBar: NavigationBar(
+        onDestinationSelected: (int index) {
+
+        },
+        selectedIndex: 0,
+        destinations:const<NavigationDestination> [
+          NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
+          NavigationDestination(icon: Icon(Icons.analytics), label: 'Home'),
+          NavigationDestination(icon: Icon(Icons.price_change), label: 'Home'),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){},
+        backgroundColor: Colors.amber,
+        foregroundColor: Colors.black,
+        child: Icon(Icons.phone),
       ),
     );
   }
